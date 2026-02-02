@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: blue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        header{
+            background-color: green;
+        }
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      .box{
+        background-color: green;
+      }
+    }
